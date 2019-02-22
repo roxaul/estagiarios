@@ -5,6 +5,11 @@
         <title>Laragon</title>
         <link href="https://fonts.googleapis.com/css?family=Karla:400" rel="stylesheet" type="text/css">
         <style>
+		div{
+			padding: 0%;
+			margin: 15%;
+			text-align:center;
+		}
         </style>
     </head>
     <body>
@@ -27,11 +32,11 @@
 function validate(){
 	var nome=$('#nome').val();
 	var email=$('#email').val();
-	//if(){
-		//alert("Campos nome e e-mail obrigatorios");
-		//return false;
-	//}else{
-		//return true;
-	//}
+	if(nome == ""||email == ""){
+		alert("Campos nome e e-mail obrigatorios");
+		return false;
+	}else{
+		return true;
+	}
 }
 </script>
